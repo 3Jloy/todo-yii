@@ -1,0 +1,39 @@
+<div id="tasksList">
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>Actions</th>
+        <th>Title</th>
+        <th>Text</th>
+        <th>Status</th>
+        <th>Cteated</th>
+      </tr>
+    </thead>
+    <tbody ng-hide="isEmpty()">
+      <tr ng-repeat="task in tasks">
+        <td>
+          <a href="" ng-click="confirm(task)" rel="tooltip" title="{{ 'DELETE' }}"><i class="icon-trash"></i></a>
+          <a href="#/edit/{{task.id}}" rel="tooltip" title="{{ 'UPDATE' }}"><i class="icon-pencil"></i></a>
+        </td>
+        <td>
+          <a href="#/view/{{task.id}}">
+            {{ task.title }}
+          </a>
+        </td>
+        <td>{{ task.text }}</td>
+        <td>{{ getStatusTitle(task) }}</td>
+        <td>{{ task.created_at }}</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr ng-show="isEmpty()">
+        <td colspan="5">{{ 'Tasks did not added yet!' }}</td>
+      </tr>
+      <tr>
+        <td colspan="5">
+          <a href="#/add" class="btn btn-success">{{ 'Add task' }}</a>      
+        </td>
+      </tr>
+    </tfoot>
+  </table>
+</div>

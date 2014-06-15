@@ -1,0 +1,728 @@
+2014/06/12 14:03:11 [error] [exception.CException] exception 'CException' with message 'Property "CWebApplication.bootstrap" is not defined.' in /home/yury/projects/todo-yii/yiiroot/framework/base/CComponent.php:130
+Stack trace:
+#0 /home/yury/projects/todo-yii/yiiroot/framework/base/CModule.php(105): CComponent->__get('bootstrap')
+#1 /home/yury/projects/todo-yii/public_html/protected/views/layouts/main.php(15): CModule->__get('bootstrap')
+#2 /home/yury/projects/todo-yii/yiiroot/framework/web/CBaseController.php(126): require('/home/yury/proj...')
+#3 /home/yury/projects/todo-yii/yiiroot/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/yury/proj...', Array, true)
+#4 /home/yury/projects/todo-yii/yiiroot/framework/web/widgets/CContentDecorator.php(76): CBaseController->renderFile('/home/yury/proj...', Array, true)
+#5 /home/yury/projects/todo-yii/yiiroot/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#6 /home/yury/projects/todo-yii/yiiroot/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#7 /home/yury/projects/todo-yii/yiiroot/framework/web/CBaseController.php(206): COutputProcessor->run()
+#8 /home/yury/projects/todo-yii/yiiroot/framework/web/CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#9 /home/yury/projects/todo-yii/public_html/protected/views/layouts/column1.php(6): CBaseController->endContent()
+#10 /home/yury/projects/todo-yii/yiiroot/framework/web/CBaseController.php(126): require('/home/yury/proj...')
+#11 /home/yury/projects/todo-yii/yiiroot/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/yury/proj...', Array, true)
+#12 /home/yury/projects/todo-yii/yiiroot/framework/web/CController.php(784): CBaseController->renderFile('/home/yury/proj...', Array, true)
+#13 /home/yury/projects/todo-yii/public_html/protected/controllers/SiteController.php(32): CController->render('index')
+#14 /home/yury/projects/todo-yii/yiiroot/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#15 /home/yury/projects/todo-yii/yiiroot/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#16 /home/yury/projects/todo-yii/yiiroot/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#17 /home/yury/projects/todo-yii/yiiroot/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /home/yury/projects/todo-yii/yiiroot/framework/web/CWebApplication.php(282): CController->run('')
+#19 /home/yury/projects/todo-yii/yiiroot/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#20 /home/yury/projects/todo-yii/yiiroot/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#21 /home/yury/projects/todo-yii/public_html/index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/public_html/
+---
+2014/06/12 14:04:17 [error] [exception.CException] exception 'CException' with message 'Property "CWebApplication.bootstrap" is not defined.' in /home/yury/projects/todo-yii/yiiroot/framework/base/CComponent.php:130
+Stack trace:
+#0 /home/yury/projects/todo-yii/yiiroot/framework/base/CModule.php(105): CComponent->__get('bootstrap')
+#1 /home/yury/projects/todo-yii/public_html/protected/views/layouts/main.php(15): CModule->__get('bootstrap')
+#2 /home/yury/projects/todo-yii/yiiroot/framework/web/CBaseController.php(126): require('/home/yury/proj...')
+#3 /home/yury/projects/todo-yii/yiiroot/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/yury/proj...', Array, true)
+#4 /home/yury/projects/todo-yii/yiiroot/framework/web/widgets/CContentDecorator.php(76): CBaseController->renderFile('/home/yury/proj...', Array, true)
+#5 /home/yury/projects/todo-yii/yiiroot/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#6 /home/yury/projects/todo-yii/yiiroot/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#7 /home/yury/projects/todo-yii/yiiroot/framework/web/CBaseController.php(206): COutputProcessor->run()
+#8 /home/yury/projects/todo-yii/yiiroot/framework/web/CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#9 /home/yury/projects/todo-yii/public_html/protected/views/layouts/column1.php(6): CBaseController->endContent()
+#10 /home/yury/projects/todo-yii/yiiroot/framework/web/CBaseController.php(126): require('/home/yury/proj...')
+#11 /home/yury/projects/todo-yii/yiiroot/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/yury/proj...', Array, true)
+#12 /home/yury/projects/todo-yii/yiiroot/framework/web/CController.php(784): CBaseController->renderFile('/home/yury/proj...', Array, true)
+#13 /home/yury/projects/todo-yii/public_html/protected/controllers/SiteController.php(32): CController->render('index')
+#14 /home/yury/projects/todo-yii/yiiroot/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#15 /home/yury/projects/todo-yii/yiiroot/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#16 /home/yury/projects/todo-yii/yiiroot/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#17 /home/yury/projects/todo-yii/yiiroot/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /home/yury/projects/todo-yii/yiiroot/framework/web/CWebApplication.php(282): CController->run('')
+#19 /home/yury/projects/todo-yii/yiiroot/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#20 /home/yury/projects/todo-yii/yiiroot/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#21 /home/yury/projects/todo-yii/public_html/index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/public_html/
+---
+2014/06/12 14:08:11 [error] [exception.CException] exception 'CException' with message 'Property "CWebUser.bootstrap" is not defined.' in /home/yury/projects/todo-yii/yiiroot/framework/base/CComponent.php:173
+Stack trace:
+#0 /home/yury/projects/todo-yii/yiiroot/framework/web/auth/CWebUser.php(160): CComponent->__set('bootstrap', Array)
+#1 /home/yury/projects/todo-yii/yiiroot/framework/YiiBase.php(220): CWebUser->__set('bootstrap', Array)
+#2 /home/yury/projects/todo-yii/yiiroot/framework/base/CModule.php(386): YiiBase::createComponent(Array)
+#3 /home/yury/projects/todo-yii/yiiroot/framework/base/CModule.php(103): CModule->getComponent('user')
+#4 /home/yury/projects/todo-yii/public_html/protected/views/layouts/main.php(37): CModule->__get('user')
+#5 /home/yury/projects/todo-yii/yiiroot/framework/web/CBaseController.php(126): require('/home/yury/proj...')
+#6 /home/yury/projects/todo-yii/yiiroot/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/yury/proj...', Array, true)
+#7 /home/yury/projects/todo-yii/yiiroot/framework/web/widgets/CContentDecorator.php(76): CBaseController->renderFile('/home/yury/proj...', Array, true)
+#8 /home/yury/projects/todo-yii/yiiroot/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#9 /home/yury/projects/todo-yii/yiiroot/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#10 /home/yury/projects/todo-yii/yiiroot/framework/web/CBaseController.php(206): COutputProcessor->run()
+#11 /home/yury/projects/todo-yii/yiiroot/framework/web/CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#12 /home/yury/projects/todo-yii/public_html/protected/views/layouts/column1.php(6): CBaseController->endContent()
+#13 /home/yury/projects/todo-yii/yiiroot/framework/web/CBaseController.php(126): require('/home/yury/proj...')
+#14 /home/yury/projects/todo-yii/yiiroot/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/yury/proj...', Array, true)
+#15 /home/yury/projects/todo-yii/yiiroot/framework/web/CController.php(784): CBaseController->renderFile('/home/yury/proj...', Array, true)
+#16 /home/yury/projects/todo-yii/public_html/protected/controllers/SiteController.php(32): CController->render('index')
+#17 /home/yury/projects/todo-yii/yiiroot/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#18 /home/yury/projects/todo-yii/yiiroot/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#19 /home/yury/projects/todo-yii/yiiroot/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#20 /home/yury/projects/todo-yii/yiiroot/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 /home/yury/projects/todo-yii/yiiroot/framework/web/CWebApplication.php(282): CController->run('')
+#22 /home/yury/projects/todo-yii/yiiroot/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#23 /home/yury/projects/todo-yii/yiiroot/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#24 /home/yury/projects/todo-yii/public_html/index.php(13): CApplication->run()
+#25 {main}
+REQUEST_URI=/public_html/
+---
+2014/06/12 14:08:32 [error] [exception.CException] exception 'CException' with message 'Property "CWebApplication.bootstrap" is not defined.' in /home/yury/projects/todo-yii/yiiroot/framework/base/CComponent.php:130
+Stack trace:
+#0 /home/yury/projects/todo-yii/yiiroot/framework/base/CModule.php(105): CComponent->__get('bootstrap')
+#1 /home/yury/projects/todo-yii/public_html/protected/views/layouts/main.php(15): CModule->__get('bootstrap')
+#2 /home/yury/projects/todo-yii/yiiroot/framework/web/CBaseController.php(126): require('/home/yury/proj...')
+#3 /home/yury/projects/todo-yii/yiiroot/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/yury/proj...', Array, true)
+#4 /home/yury/projects/todo-yii/yiiroot/framework/web/widgets/CContentDecorator.php(76): CBaseController->renderFile('/home/yury/proj...', Array, true)
+#5 /home/yury/projects/todo-yii/yiiroot/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#6 /home/yury/projects/todo-yii/yiiroot/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#7 /home/yury/projects/todo-yii/yiiroot/framework/web/CBaseController.php(206): COutputProcessor->run()
+#8 /home/yury/projects/todo-yii/yiiroot/framework/web/CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#9 /home/yury/projects/todo-yii/public_html/protected/views/layouts/column1.php(6): CBaseController->endContent()
+#10 /home/yury/projects/todo-yii/yiiroot/framework/web/CBaseController.php(126): require('/home/yury/proj...')
+#11 /home/yury/projects/todo-yii/yiiroot/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/yury/proj...', Array, true)
+#12 /home/yury/projects/todo-yii/yiiroot/framework/web/CController.php(784): CBaseController->renderFile('/home/yury/proj...', Array, true)
+#13 /home/yury/projects/todo-yii/public_html/protected/controllers/SiteController.php(32): CController->render('index')
+#14 /home/yury/projects/todo-yii/yiiroot/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#15 /home/yury/projects/todo-yii/yiiroot/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#16 /home/yury/projects/todo-yii/yiiroot/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#17 /home/yury/projects/todo-yii/yiiroot/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /home/yury/projects/todo-yii/yiiroot/framework/web/CWebApplication.php(282): CController->run('')
+#19 /home/yury/projects/todo-yii/yiiroot/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#20 /home/yury/projects/todo-yii/yiiroot/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#21 /home/yury/projects/todo-yii/public_html/index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/public_html/
+---
+2014/06/12 14:08:41 [error] [exception.CException] exception 'CException' with message 'Property "CWebUser.bootstrap" is not defined.' in /home/yury/projects/todo-yii/yiiroot/framework/base/CComponent.php:173
+Stack trace:
+#0 /home/yury/projects/todo-yii/yiiroot/framework/web/auth/CWebUser.php(160): CComponent->__set('bootstrap', Array)
+#1 /home/yury/projects/todo-yii/yiiroot/framework/YiiBase.php(220): CWebUser->__set('bootstrap', Array)
+#2 /home/yury/projects/todo-yii/yiiroot/framework/base/CModule.php(386): YiiBase::createComponent(Array)
+#3 /home/yury/projects/todo-yii/yiiroot/framework/base/CModule.php(103): CModule->getComponent('user')
+#4 /home/yury/projects/todo-yii/public_html/protected/views/layouts/main.php(37): CModule->__get('user')
+#5 /home/yury/projects/todo-yii/yiiroot/framework/web/CBaseController.php(126): require('/home/yury/proj...')
+#6 /home/yury/projects/todo-yii/yiiroot/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/yury/proj...', Array, true)
+#7 /home/yury/projects/todo-yii/yiiroot/framework/web/widgets/CContentDecorator.php(76): CBaseController->renderFile('/home/yury/proj...', Array, true)
+#8 /home/yury/projects/todo-yii/yiiroot/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#9 /home/yury/projects/todo-yii/yiiroot/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#10 /home/yury/projects/todo-yii/yiiroot/framework/web/CBaseController.php(206): COutputProcessor->run()
+#11 /home/yury/projects/todo-yii/yiiroot/framework/web/CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#12 /home/yury/projects/todo-yii/public_html/protected/views/layouts/column1.php(6): CBaseController->endContent()
+#13 /home/yury/projects/todo-yii/yiiroot/framework/web/CBaseController.php(126): require('/home/yury/proj...')
+#14 /home/yury/projects/todo-yii/yiiroot/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/yury/proj...', Array, true)
+#15 /home/yury/projects/todo-yii/yiiroot/framework/web/CController.php(784): CBaseController->renderFile('/home/yury/proj...', Array, true)
+#16 /home/yury/projects/todo-yii/public_html/protected/controllers/SiteController.php(32): CController->render('index')
+#17 /home/yury/projects/todo-yii/yiiroot/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#18 /home/yury/projects/todo-yii/yiiroot/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#19 /home/yury/projects/todo-yii/yiiroot/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#20 /home/yury/projects/todo-yii/yiiroot/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 /home/yury/projects/todo-yii/yiiroot/framework/web/CWebApplication.php(282): CController->run('')
+#22 /home/yury/projects/todo-yii/yiiroot/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#23 /home/yury/projects/todo-yii/yiiroot/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#24 /home/yury/projects/todo-yii/public_html/index.php(13): CApplication->run()
+#25 {main}
+REQUEST_URI=/public_html/
+---
+2014/06/12 14:09:12 [error] [exception.CException] exception 'CException' with message 'Property "CWebUser.bootstrap" is not defined.' in /home/yury/projects/todo-yii/yiiroot/framework/base/CComponent.php:173
+Stack trace:
+#0 /home/yury/projects/todo-yii/yiiroot/framework/web/auth/CWebUser.php(160): CComponent->__set('bootstrap', Array)
+#1 /home/yury/projects/todo-yii/yiiroot/framework/YiiBase.php(220): CWebUser->__set('bootstrap', Array)
+#2 /home/yury/projects/todo-yii/yiiroot/framework/base/CModule.php(386): YiiBase::createComponent(Array)
+#3 /home/yury/projects/todo-yii/yiiroot/framework/base/CModule.php(103): CModule->getComponent('user')
+#4 /home/yury/projects/todo-yii/public_html/protected/views/layouts/main.php(37): CModule->__get('user')
+#5 /home/yury/projects/todo-yii/yiiroot/framework/web/CBaseController.php(126): require('/home/yury/proj...')
+#6 /home/yury/projects/todo-yii/yiiroot/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/yury/proj...', Array, true)
+#7 /home/yury/projects/todo-yii/yiiroot/framework/web/widgets/CContentDecorator.php(76): CBaseController->renderFile('/home/yury/proj...', Array, true)
+#8 /home/yury/projects/todo-yii/yiiroot/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#9 /home/yury/projects/todo-yii/yiiroot/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#10 /home/yury/projects/todo-yii/yiiroot/framework/web/CBaseController.php(206): COutputProcessor->run()
+#11 /home/yury/projects/todo-yii/yiiroot/framework/web/CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#12 /home/yury/projects/todo-yii/public_html/protected/views/layouts/column1.php(6): CBaseController->endContent()
+#13 /home/yury/projects/todo-yii/yiiroot/framework/web/CBaseController.php(126): require('/home/yury/proj...')
+#14 /home/yury/projects/todo-yii/yiiroot/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/yury/proj...', Array, true)
+#15 /home/yury/projects/todo-yii/yiiroot/framework/web/CController.php(784): CBaseController->renderFile('/home/yury/proj...', Array, true)
+#16 /home/yury/projects/todo-yii/public_html/protected/controllers/SiteController.php(32): CController->render('index')
+#17 /home/yury/projects/todo-yii/yiiroot/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#18 /home/yury/projects/todo-yii/yiiroot/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#19 /home/yury/projects/todo-yii/yiiroot/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#20 /home/yury/projects/todo-yii/yiiroot/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 /home/yury/projects/todo-yii/yiiroot/framework/web/CWebApplication.php(282): CController->run('')
+#22 /home/yury/projects/todo-yii/yiiroot/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#23 /home/yury/projects/todo-yii/yiiroot/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#24 /home/yury/projects/todo-yii/public_html/index.php(13): CApplication->run()
+#25 {main}
+REQUEST_URI=/public_html/
+---
+2014/06/12 16:33:35 [error] [exception.CException] exception 'CException' with message 'CPhpMessageSource and its behaviors do not have a method or closure named "getAllMessages".' in /home/yury/projects/todo-yii/yiiroot/framework/base/CComponent.php:266
+Stack trace:
+#0 /home/yury/projects/todo-yii/public_html/protected/views/tasks/index.php(10): CComponent->__call('getAllMessages', Array)
+#1 /home/yury/projects/todo-yii/public_html/protected/views/tasks/index.php(10): CPhpMessageSource->getAllMessages('frontend', 'en_us')
+#2 /home/yury/projects/todo-yii/yiiroot/framework/web/CBaseController.php(126): require('/home/yury/proj...')
+#3 /home/yury/projects/todo-yii/yiiroot/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/yury/proj...', NULL, true)
+#4 /home/yury/projects/todo-yii/yiiroot/framework/web/CController.php(869): CBaseController->renderFile('/home/yury/proj...', NULL, true)
+#5 /home/yury/projects/todo-yii/yiiroot/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#6 /home/yury/projects/todo-yii/public_html/protected/controllers/TasksController.php(7): CController->render('index')
+#7 /home/yury/projects/todo-yii/yiiroot/framework/web/actions/CInlineAction.php(49): TasksController->actionIndex()
+#8 /home/yury/projects/todo-yii/yiiroot/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /home/yury/projects/todo-yii/yiiroot/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /home/yury/projects/todo-yii/yiiroot/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /home/yury/projects/todo-yii/yiiroot/framework/web/CWebApplication.php(282): CController->run('')
+#12 /home/yury/projects/todo-yii/yiiroot/framework/web/CWebApplication.php(141): CWebApplication->runController('tasks')
+#13 /home/yury/projects/todo-yii/yiiroot/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /home/yury/projects/todo-yii/public_html/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/public_html/index.php?r=tasks
+---
+2014/06/13 09:24:20 [error] [exception.CException] exception 'CException' with message 'CPhpMessageSource and its behaviors do not have a method or closure named "getAllMessages".' in /home/yury/projects/todo-yii/yiiroot/framework/base/CComponent.php:266
+Stack trace:
+#0 /home/yury/projects/todo-yii/public_html/protected/views/tasks/index.php(9): CComponent->__call('getAllMessages', Array)
+#1 /home/yury/projects/todo-yii/public_html/protected/views/tasks/index.php(9): CPhpMessageSource->getAllMessages('frontend', 'en_us')
+#2 /home/yury/projects/todo-yii/yiiroot/framework/web/CBaseController.php(126): require('/home/yury/proj...')
+#3 /home/yury/projects/todo-yii/yiiroot/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/yury/proj...', NULL, true)
+#4 /home/yury/projects/todo-yii/yiiroot/framework/web/CController.php(869): CBaseController->renderFile('/home/yury/proj...', NULL, true)
+#5 /home/yury/projects/todo-yii/yiiroot/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#6 /home/yury/projects/todo-yii/public_html/protected/controllers/TasksController.php(7): CController->render('index')
+#7 /home/yury/projects/todo-yii/yiiroot/framework/web/actions/CInlineAction.php(49): TasksController->actionIndex()
+#8 /home/yury/projects/todo-yii/yiiroot/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /home/yury/projects/todo-yii/yiiroot/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /home/yury/projects/todo-yii/yiiroot/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /home/yury/projects/todo-yii/yiiroot/framework/web/CWebApplication.php(282): CController->run('')
+#12 /home/yury/projects/todo-yii/yiiroot/framework/web/CWebApplication.php(141): CWebApplication->runController('tasks')
+#13 /home/yury/projects/todo-yii/yiiroot/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /home/yury/projects/todo-yii/public_html/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/public_html/index.php?r=tasks
+---
+2014/06/13 10:35:28 [error] [php] include(Task.php): failed to open stream: No such file or directory (/home/yury/projects/todo-yii/yiiroot/framework/YiiBase.php:427)
+Stack trace:
+#0 /home/yury/projects/todo-yii/public_html/protected/controllers/TasksController.php(10): spl_autoload_call()
+#1 /home/yury/projects/todo-yii/yiiroot/framework/web/actions/CInlineAction.php(49): TasksController->actionList()
+#2 /home/yury/projects/todo-yii/yiiroot/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /home/yury/projects/todo-yii/yiiroot/framework/web/CController.php(286): TasksController->runAction()
+#4 /home/yury/projects/todo-yii/yiiroot/framework/web/CController.php(265): TasksController->runActionWithFilters()
+#5 /home/yury/projects/todo-yii/yiiroot/framework/web/CWebApplication.php(282): TasksController->run()
+#6 /home/yury/projects/todo-yii/yiiroot/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /home/yury/projects/todo-yii/yiiroot/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /home/yury/projects/todo-yii/public_html/index.php(13): CWebApplication->run()
+REQUEST_URI=/public_html/index.php?r=tasks/list
+in /home/yury/projects/todo-yii/public_html/protected/controllers/TasksController.php (10)
+in /home/yury/projects/todo-yii/public_html/index.php (13)
+2014/06/13 10:36:33 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /home/yury/projects/todo-yii/yiiroot/framework/web/CController.php:336
+Stack trace:
+#0 /home/yury/projects/todo-yii/yiiroot/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /home/yury/projects/todo-yii/yiiroot/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#2 /home/yury/projects/todo-yii/yiiroot/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /home/yury/projects/todo-yii/yiiroot/framework/web/CWebApplication.php(282): CController->run('view')
+#4 /home/yury/projects/todo-yii/yiiroot/framework/web/CWebApplication.php(141): CWebApplication->runController('tasks/view')
+#5 /home/yury/projects/todo-yii/yiiroot/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /home/yury/projects/todo-yii/public_html/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/public_html/index.php?r=tasks/view
+---
+2014/06/13 10:36:41 [error] [php] include(Task.php): failed to open stream: No such file or directory (/home/yury/projects/todo-yii/yiiroot/framework/YiiBase.php:427)
+Stack trace:
+#0 /home/yury/projects/todo-yii/public_html/protected/controllers/TasksController.php(10): spl_autoload_call()
+#1 /home/yury/projects/todo-yii/yiiroot/framework/web/actions/CInlineAction.php(49): TasksController->actionList()
+#2 /home/yury/projects/todo-yii/yiiroot/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /home/yury/projects/todo-yii/yiiroot/framework/web/CController.php(286): TasksController->runAction()
+#4 /home/yury/projects/todo-yii/yiiroot/framework/web/CController.php(265): TasksController->runActionWithFilters()
+#5 /home/yury/projects/todo-yii/yiiroot/framework/web/CWebApplication.php(282): TasksController->run()
+#6 /home/yury/projects/todo-yii/yiiroot/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /home/yury/projects/todo-yii/yiiroot/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /home/yury/projects/todo-yii/public_html/index.php(13): CWebApplication->run()
+REQUEST_URI=/public_html/index.php?r=tasks/list
+in /home/yury/projects/todo-yii/public_html/protected/controllers/TasksController.php (10)
+in /home/yury/projects/todo-yii/public_html/index.php (13)
+2014/06/13 11:00:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/yury/projects/todo-yii/yiiroot/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/yury/projects/todo-yii/yiiroot/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /home/yury/projects/todo-yii/yiiroot/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/yury/projects/todo-yii/public_html/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/public_html/index.php/favicon.ico
+---
+2014/06/13 11:08:21 [error] [php] include(Task.php): failed to open stream: No such file or directory (/home/yury/projects/todo-yii/yiiroot/framework/YiiBase.php:427)
+Stack trace:
+#0 /home/yury/projects/todo-yii/public_html/protected/controllers/TasksController.php(10): spl_autoload_call()
+#1 /home/yury/projects/todo-yii/yiiroot/framework/web/actions/CInlineAction.php(49): TasksController->actionList()
+#2 /home/yury/projects/todo-yii/yiiroot/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /home/yury/projects/todo-yii/yiiroot/framework/web/CController.php(286): TasksController->runAction()
+#4 /home/yury/projects/todo-yii/yiiroot/framework/web/CController.php(265): TasksController->runActionWithFilters()
+#5 /home/yury/projects/todo-yii/yiiroot/framework/web/CWebApplication.php(282): TasksController->run()
+#6 /home/yury/projects/todo-yii/yiiroot/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /home/yury/projects/todo-yii/yiiroot/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /home/yury/projects/todo-yii/public_html/index.php(13): CWebApplication->run()
+REQUEST_URI=/public_html/index.php/api/tasks
+in /home/yury/projects/todo-yii/public_html/protected/controllers/TasksController.php (10)
+in /home/yury/projects/todo-yii/public_html/index.php (13)
+2014/06/13 11:10:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii/index".' in /home/yury/projects/todo-yii/yiiroot/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/yury/projects/todo-yii/yiiroot/framework/web/CWebApplication.php(141): CWebApplication->runController('gii/index')
+#1 /home/yury/projects/todo-yii/yiiroot/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/yury/projects/todo-yii/public_html/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/public_html/index.php/gii/index
+---
+2014/06/13 11:11:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii/index".' in /home/yury/projects/todo-yii/yiiroot/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/yury/projects/todo-yii/yiiroot/framework/web/CWebApplication.php(141): CWebApplication->runController('gii/index')
+#1 /home/yury/projects/todo-yii/yiiroot/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/yury/projects/todo-yii/public_html/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/public_html/index.php/gii/index
+---
+2014/06/13 11:11:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii/index".' in /home/yury/projects/todo-yii/yiiroot/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/yury/projects/todo-yii/yiiroot/framework/web/CWebApplication.php(141): CWebApplication->runController('gii/index')
+#1 /home/yury/projects/todo-yii/yiiroot/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/yury/projects/todo-yii/public_html/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/public_html/index.php/gii/index
+---
+2014/06/13 11:37:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/yury/projects/todo-yii/yiiroot/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/yury/projects/todo-yii/yiiroot/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /home/yury/projects/todo-yii/yiiroot/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/yury/projects/todo-yii/public_html/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/public_html/index.php/favicon.ico
+---
+2014/06/13 11:44:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "partials/list.html".' in /home/yury/projects/todo-yii/yiiroot/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/yury/projects/todo-yii/yiiroot/framework/web/CWebApplication.php(141): CWebApplication->runController('partials/list.h...')
+#1 /home/yury/projects/todo-yii/yiiroot/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/yury/projects/todo-yii/public_html/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/public_html/index.php/partials/list.html
+HTTP_REFERER=http://todo-yii/public_html/index.php/tasks/index
+---
+2014/06/13 11:46:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "partials/list.html".' in /home/yury/projects/todo-yii/yiiroot/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/yury/projects/todo-yii/yiiroot/framework/web/CWebApplication.php(141): CWebApplication->runController('partials/list.h...')
+#1 /home/yury/projects/todo-yii/yiiroot/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/yury/projects/todo-yii/public_html/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/public_html/index.php/partials/list.html
+HTTP_REFERER=http://todo-yii/public_html/index.php/tasks/index
+---
+2014/06/13 11:47:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "partials/list.html".' in /home/yury/projects/todo-yii/yiiroot/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/yury/projects/todo-yii/yiiroot/framework/web/CWebApplication.php(141): CWebApplication->runController('partials/list.h...')
+#1 /home/yury/projects/todo-yii/yiiroot/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/yury/projects/todo-yii/public_html/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/public_html/index.php/partials/list.html
+HTTP_REFERER=http://todo-yii/public_html/index.php/tasks/index
+---
+2014/06/13 15:40:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/ajax-loader.gif".' in /home/yury/projects/todo-yii/yiiroot/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/yury/projects/todo-yii/yiiroot/framework/web/CWebApplication.php(141): CWebApplication->runController('images/ajax-loa...')
+#1 /home/yury/projects/todo-yii/yiiroot/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/yury/projects/todo-yii/public_html/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/public_html/images/ajax-loader.gif
+HTTP_REFERER=http://todo-yii/public_html/tasks/index
+---
+2014/06/13 15:47:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/yury/projects/todo-yii/yiiroot/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/yury/projects/todo-yii/yiiroot/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /home/yury/projects/todo-yii/yiiroot/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/yury/projects/todo-yii/public_html/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/public_html/favicon.ico
+---
+2014/06/13 17:02:04 [warning] [application] Failed to set unsafe attribute "status" of "Task".
+in /home/yury/projects/todo-yii/public_html/protected/controllers/TasksController.php (21)
+in /home/yury/projects/todo-yii/public_html/index.php (13)
+2014/06/13 17:02:10 [warning] [application] Failed to set unsafe attribute "status" of "Task".
+in /home/yury/projects/todo-yii/public_html/protected/controllers/TasksController.php (21)
+in /home/yury/projects/todo-yii/public_html/index.php (13)
+2014/06/13 17:03:54 [error] [php] Undefined variable: place (/home/yury/projects/todo-yii/public_html/protected/controllers/TasksController.php:23)
+Stack trace:
+#0 /home/yury/projects/todo-yii/yiiroot/framework/web/CController.php(286): TasksController->runAction()
+#1 /home/yury/projects/todo-yii/yiiroot/framework/web/CController.php(265): TasksController->runActionWithFilters()
+#2 /home/yury/projects/todo-yii/yiiroot/framework/web/CWebApplication.php(282): TasksController->run()
+#3 /home/yury/projects/todo-yii/yiiroot/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /home/yury/projects/todo-yii/yiiroot/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#5 /home/yury/projects/todo-yii/public_html/index.php(13): CWebApplication->run()
+REQUEST_URI=/public_html/api/tasks
+in /home/yury/projects/todo-yii/public_html/protected/controllers/TasksController.php (23)
+in /home/yury/projects/todo-yii/public_html/index.php (13)
+2014/06/13 17:08:31 [warning] [application] Failed to set unsafe attribute "created_at" of "Task".
+in /home/yury/projects/todo-yii/public_html/protected/controllers/TasksController.php (40)
+in /home/yury/projects/todo-yii/public_html/index.php (13)
+2014/06/13 17:08:31 [warning] [application] Failed to set unsafe attribute "id" of "Task".
+in /home/yury/projects/todo-yii/public_html/protected/controllers/TasksController.php (40)
+in /home/yury/projects/todo-yii/public_html/index.php (13)
+2014/06/13 17:43:14 [warning] [application] Failed to set unsafe attribute "created_at" of "Task".
+in /home/yury/projects/todo-yii/public_html/protected/controllers/TasksController.php (40)
+in /home/yury/projects/todo-yii/public_html/index.php (13)
+2014/06/13 17:43:14 [warning] [application] Failed to set unsafe attribute "id" of "Task".
+in /home/yury/projects/todo-yii/public_html/protected/controllers/TasksController.php (40)
+in /home/yury/projects/todo-yii/public_html/index.php (13)
+2014/06/13 17:46:33 [warning] [application] Failed to set unsafe attribute "id" of "Task".
+in /home/yury/projects/todo-yii/public_html/protected/controllers/TasksController.php (40)
+in /home/yury/projects/todo-yii/public_html/index.php (13)
+2014/06/13 17:46:33 [warning] [application] Failed to set unsafe attribute "created_at" of "Task".
+in /home/yury/projects/todo-yii/public_html/protected/controllers/TasksController.php (40)
+in /home/yury/projects/todo-yii/public_html/index.php (13)
+2014/06/13 17:46:50 [warning] [application] Failed to set unsafe attribute "id" of "Task".
+in /home/yury/projects/todo-yii/public_html/protected/controllers/TasksController.php (40)
+in /home/yury/projects/todo-yii/public_html/index.php (13)
+2014/06/13 17:46:50 [warning] [application] Failed to set unsafe attribute "created_at" of "Task".
+in /home/yury/projects/todo-yii/public_html/protected/controllers/TasksController.php (40)
+in /home/yury/projects/todo-yii/public_html/index.php (13)
+2014/06/13 17:47:15 [warning] [application] Failed to set unsafe attribute "id" of "Task".
+in /home/yury/projects/todo-yii/public_html/protected/controllers/TasksController.php (40)
+in /home/yury/projects/todo-yii/public_html/index.php (13)
+2014/06/13 17:47:15 [warning] [application] Failed to set unsafe attribute "created_at" of "Task".
+in /home/yury/projects/todo-yii/public_html/protected/controllers/TasksController.php (40)
+in /home/yury/projects/todo-yii/public_html/index.php (13)
+2014/06/13 19:23:26 [warning] [application] Failed to set unsafe attribute "id" of "Task".
+in /home/yury/projects/todo-yii/public_html/protected/controllers/TasksController.php (40)
+in /home/yury/projects/todo-yii/public_html/index.php (13)
+2014/06/13 19:23:26 [warning] [application] Failed to set unsafe attribute "created_at" of "Task".
+in /home/yury/projects/todo-yii/public_html/protected/controllers/TasksController.php (40)
+in /home/yury/projects/todo-yii/public_html/index.php (13)
+2014/06/13 19:27:27 [warning] [application] Failed to set unsafe attribute "id" of "Task".
+in /home/yury/projects/todo-yii/public_html/protected/controllers/TasksController.php (40)
+in /home/yury/projects/todo-yii/public_html/index.php (13)
+2014/06/13 19:27:27 [warning] [application] Failed to set unsafe attribute "created_at" of "Task".
+in /home/yury/projects/todo-yii/public_html/protected/controllers/TasksController.php (40)
+in /home/yury/projects/todo-yii/public_html/index.php (13)
+2014/06/13 19:27:53 [warning] [application] Failed to set unsafe attribute "id" of "Task".
+in /home/yury/projects/todo-yii/public_html/protected/controllers/TasksController.php (40)
+in /home/yury/projects/todo-yii/public_html/index.php (13)
+2014/06/13 19:27:53 [warning] [application] Failed to set unsafe attribute "created_at" of "Task".
+in /home/yury/projects/todo-yii/public_html/protected/controllers/TasksController.php (40)
+in /home/yury/projects/todo-yii/public_html/index.php (13)
+2014/06/13 21:16:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /home/yury/projects/todo-yii/yiiroot/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/yury/projects/todo-yii/yiiroot/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /home/yury/projects/todo-yii/yiiroot/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/yury/projects/todo-yii/public_html/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/public_html/
+---
+2014/06/13 21:47:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "index".' in /home/yury/projects/todo-yii/yiiroot/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/yury/projects/todo-yii/yiiroot/framework/web/CWebApplication.php(141): CWebApplication->runController('index')
+#1 /home/yury/projects/todo-yii/yiiroot/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/yury/projects/todo-yii/public_html/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/public_html/index
+HTTP_REFERER=http://todo-yii/public_html/
+---
+2014/06/14 01:23:59 [error] [exception.CException] exception 'CException' with message 'Property "Task._attributes" is not defined.' in /home/yury/projects/todo-yii/yiiroot/framework/base/CComponent.php:130
+Stack trace:
+#0 /home/yury/projects/todo-yii/yiiroot/framework/db/ar/CActiveRecord.php(145): CComponent->__get('_attributes')
+#1 /home/yury/projects/todo-yii/public_html/protected/controllers/TasksController.php(15): CActiveRecord->__get('_attributes')
+#2 /home/yury/projects/todo-yii/yiiroot/framework/web/actions/CInlineAction.php(49): TasksController->actionList()
+#3 /home/yury/projects/todo-yii/yiiroot/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /home/yury/projects/todo-yii/yiiroot/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /home/yury/projects/todo-yii/yiiroot/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/yury/projects/todo-yii/yiiroot/framework/web/CWebApplication.php(282): CController->run('list')
+#7 /home/yury/projects/todo-yii/yiiroot/framework/web/CWebApplication.php(141): CWebApplication->runController('tasks/list')
+#8 /home/yury/projects/todo-yii/yiiroot/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /home/yury/projects/todo-yii/public_html/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/public_html/api/tasks
+---
+2014/06/14 01:26:15 [error] [exception.CException] exception 'CException' with message 'Property "Task._attributes" is not defined.' in /home/yury/projects/todo-yii/yiiroot/framework/base/CComponent.php:130
+Stack trace:
+#0 /home/yury/projects/todo-yii/yiiroot/framework/db/ar/CActiveRecord.php(145): CComponent->__get('_attributes')
+#1 /home/yury/projects/todo-yii/public_html/protected/controllers/TasksController.php(17): CActiveRecord->__get('_attributes')
+#2 /home/yury/projects/todo-yii/yiiroot/framework/web/actions/CInlineAction.php(49): TasksController->actionList()
+#3 /home/yury/projects/todo-yii/yiiroot/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /home/yury/projects/todo-yii/yiiroot/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /home/yury/projects/todo-yii/yiiroot/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/yury/projects/todo-yii/yiiroot/framework/web/CWebApplication.php(282): CController->run('list')
+#7 /home/yury/projects/todo-yii/yiiroot/framework/web/CWebApplication.php(141): CWebApplication->runController('tasks/list')
+#8 /home/yury/projects/todo-yii/yiiroot/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /home/yury/projects/todo-yii/public_html/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/public_html/api/tasks
+---
+2014/06/14 12:09:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/yury/projects/todo-yii/yiiroot/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/yury/projects/todo-yii/yiiroot/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /home/yury/projects/todo-yii/yiiroot/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/yury/projects/todo-yii/public_html/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/public_html/favicon.ico
+---
+2014/06/14 12:16:42 [error] [exception.CException] exception 'CException' with message 'Property "Task.comment_id" is not defined.' in /home/yury/projects/todo-yii/yiiroot/framework/base/CComponent.php:130
+Stack trace:
+#0 /home/yury/projects/todo-yii/yiiroot/framework/db/ar/CActiveRecord.php(145): CComponent->__get('comment_id')
+#1 /home/yury/projects/todo-yii/yiiroot/framework/validators/CNumberValidator.php(78): CActiveRecord->__get('comment_id')
+#2 /home/yury/projects/todo-yii/yiiroot/framework/validators/CValidator.php(213): CNumberValidator->validateAttribute(Object(Task), 'comment_id')
+#3 /home/yury/projects/todo-yii/yiiroot/framework/base/CModel.php(159): CValidator->validate(Object(Task), NULL)
+#4 /home/yury/projects/todo-yii/yiiroot/framework/db/ar/CActiveRecord.php(805): CModel->validate(NULL)
+#5 /home/yury/projects/todo-yii/public_html/protected/controllers/TasksController.php(35): CActiveRecord->save()
+#6 /home/yury/projects/todo-yii/yiiroot/framework/web/actions/CInlineAction.php(49): TasksController->actionCreate()
+#7 /home/yury/projects/todo-yii/yiiroot/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /home/yury/projects/todo-yii/yiiroot/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /home/yury/projects/todo-yii/yiiroot/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /home/yury/projects/todo-yii/yiiroot/framework/web/CWebApplication.php(282): CController->run('create')
+#11 /home/yury/projects/todo-yii/yiiroot/framework/web/CWebApplication.php(141): CWebApplication->runController('tasks/create')
+#12 /home/yury/projects/todo-yii/yiiroot/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#13 /home/yury/projects/todo-yii/public_html/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/public_html/api/tasks
+HTTP_REFERER=http://todo-yii/public_html/
+---
+2014/06/14 12:31:16 [error] [php] Trying to get property of non-object (/home/yury/projects/todo-yii/public_html/protected/controllers/TasksController.php:14)
+Stack trace:
+#0 /home/yury/projects/todo-yii/yiiroot/framework/web/CController.php(286): TasksController->runAction()
+#1 /home/yury/projects/todo-yii/yiiroot/framework/web/CController.php(265): TasksController->runActionWithFilters()
+#2 /home/yury/projects/todo-yii/yiiroot/framework/web/CWebApplication.php(282): TasksController->run()
+#3 /home/yury/projects/todo-yii/yiiroot/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /home/yury/projects/todo-yii/yiiroot/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#5 /home/yury/projects/todo-yii/public_html/index.php(13): CWebApplication->run()
+REQUEST_URI=/public_html/api/tasks
+in /home/yury/projects/todo-yii/public_html/protected/controllers/TasksController.php (14)
+in /home/yury/projects/todo-yii/public_html/index.php (13)
+2014/06/14 12:36:56 [error] [php] Indirect modification of overloaded property Task::$attributes has no effect (/home/yury/projects/todo-yii/public_html/protected/controllers/TasksController.php:15)
+Stack trace:
+#0 /home/yury/projects/todo-yii/yiiroot/framework/web/CController.php(286): TasksController->runAction()
+#1 /home/yury/projects/todo-yii/yiiroot/framework/web/CController.php(265): TasksController->runActionWithFilters()
+#2 /home/yury/projects/todo-yii/yiiroot/framework/web/CWebApplication.php(282): TasksController->run()
+#3 /home/yury/projects/todo-yii/yiiroot/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /home/yury/projects/todo-yii/yiiroot/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#5 /home/yury/projects/todo-yii/public_html/index.php(13): CWebApplication->run()
+REQUEST_URI=/public_html/api/tasks
+in /home/yury/projects/todo-yii/public_html/protected/controllers/TasksController.php (15)
+in /home/yury/projects/todo-yii/public_html/index.php (13)
+2014/06/14 13:17:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/controllers/comments_form.js".' in /home/yury/projects/todo-yii/yiiroot/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/yury/projects/todo-yii/yiiroot/framework/web/CWebApplication.php(141): CWebApplication->runController('js/controllers/...')
+#1 /home/yury/projects/todo-yii/yiiroot/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/yury/projects/todo-yii/public_html/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/public_html/js/controllers/comments_form.js
+HTTP_REFERER=http://todo-yii/public_html/
+---
+2014/06/14 13:24:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/comments".' in /home/yury/projects/todo-yii/yiiroot/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/yury/projects/todo-yii/yiiroot/framework/web/CWebApplication.php(141): CWebApplication->runController('api/comments')
+#1 /home/yury/projects/todo-yii/yiiroot/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/yury/projects/todo-yii/public_html/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/public_html/api/comments
+HTTP_REFERER=http://todo-yii/public_html/
+---
+2014/06/14 15:45:04 [warning] [application] Failed to set unsafe attribute "task_id" of "Task".
+in /home/yury/projects/todo-yii/public_html/protected/controllers/CommentsController.php (17)
+in /home/yury/projects/todo-yii/public_html/index.php (13)
+2014/06/14 17:37:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/yury/projects/todo-yii/yiiroot/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/yury/projects/todo-yii/yiiroot/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /home/yury/projects/todo-yii/yiiroot/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/yury/projects/todo-yii/public_html/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/public_html/favicon.ico
+---
+2014/06/14 20:59:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/yury/projects/todo-yii/yiiroot/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/yury/projects/todo-yii/yiiroot/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /home/yury/projects/todo-yii/yiiroot/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/yury/projects/todo-yii/public_html/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/public_html/favicon.ico
+---
+2014/06/14 21:41:57 [error] [php] Indirect modification of overloaded property Task::$attributes has no effect (/home/yury/projects/todo-yii/public_html/protected/controllers/TasksController.php:16)
+Stack trace:
+#0 /home/yury/projects/todo-yii/yiiroot/framework/web/CController.php(286): TasksController->runAction()
+#1 /home/yury/projects/todo-yii/yiiroot/framework/web/CController.php(265): TasksController->runActionWithFilters()
+#2 /home/yury/projects/todo-yii/yiiroot/framework/web/CWebApplication.php(282): TasksController->run()
+#3 /home/yury/projects/todo-yii/yiiroot/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /home/yury/projects/todo-yii/yiiroot/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#5 /home/yury/projects/todo-yii/public_html/index.php(13): CWebApplication->run()
+REQUEST_URI=/public_html/api/tasks/
+in /home/yury/projects/todo-yii/public_html/protected/controllers/TasksController.php (16)
+in /home/yury/projects/todo-yii/public_html/index.php (13)
+2014/06/14 21:46:36 [error] [php] include(Statuses.php): failed to open stream: No such file or directory (/home/yury/projects/todo-yii/yiiroot/framework/YiiBase.php:427)
+Stack trace:
+#0 /home/yury/projects/todo-yii/public_html/protected/controllers/TasksController.php(14): spl_autoload_call()
+#1 /home/yury/projects/todo-yii/yiiroot/framework/web/actions/CInlineAction.php(49): TasksController->actionList()
+#2 /home/yury/projects/todo-yii/yiiroot/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /home/yury/projects/todo-yii/yiiroot/framework/web/CController.php(286): TasksController->runAction()
+#4 /home/yury/projects/todo-yii/yiiroot/framework/web/CController.php(265): TasksController->runActionWithFilters()
+#5 /home/yury/projects/todo-yii/yiiroot/framework/web/CWebApplication.php(282): TasksController->run()
+#6 /home/yury/projects/todo-yii/yiiroot/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /home/yury/projects/todo-yii/yiiroot/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /home/yury/projects/todo-yii/public_html/index.php(13): CWebApplication->run()
+REQUEST_URI=/public_html/api/tasks/
+in /home/yury/projects/todo-yii/public_html/protected/controllers/TasksController.php (14)
+in /home/yury/projects/todo-yii/public_html/index.php (13)
+2014/06/14 22:49:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/services/statuses.js".' in /home/yury/projects/todo-yii/yiiroot/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/yury/projects/todo-yii/yiiroot/framework/web/CWebApplication.php(141): CWebApplication->runController('js/services/sta...')
+#1 /home/yury/projects/todo-yii/yiiroot/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/yury/projects/todo-yii/public_html/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/public_html/js/services/statuses.js
+HTTP_REFERER=http://todo-yii/public_html/
+---
+2014/06/15 00:15:56 [error] [php] Trying to get property of non-object (/home/yury/projects/todo-yii/public_html/protected/controllers/TasksController.php:19)
+Stack trace:
+#0 /home/yury/projects/todo-yii/yiiroot/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 /home/yury/projects/todo-yii/yiiroot/framework/web/CController.php(308): CInlineAction->runWithParams()
+#2 /home/yury/projects/todo-yii/yiiroot/framework/web/CController.php(286): TasksController->runAction()
+#3 /home/yury/projects/todo-yii/yiiroot/framework/web/CController.php(265): TasksController->runActionWithFilters()
+#4 /home/yury/projects/todo-yii/yiiroot/framework/web/CWebApplication.php(282): TasksController->run()
+#5 /home/yury/projects/todo-yii/yiiroot/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#6 /home/yury/projects/todo-yii/yiiroot/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#7 /home/yury/projects/todo-yii/public_html/index.php(13): CWebApplication->run()
+REQUEST_URI=/public_html/api/tasks/4
+in /home/yury/projects/todo-yii/public_html/protected/controllers/TasksController.php (19)
+in /home/yury/projects/todo-yii/public_html/index.php (13)
+2014/06/15 00:18:17 [error] [php] Trying to get property of non-object (/home/yury/projects/todo-yii/public_html/protected/controllers/TasksController.php:19)
+Stack trace:
+#0 /home/yury/projects/todo-yii/yiiroot/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 /home/yury/projects/todo-yii/yiiroot/framework/web/CController.php(308): CInlineAction->runWithParams()
+#2 /home/yury/projects/todo-yii/yiiroot/framework/web/CController.php(286): TasksController->runAction()
+#3 /home/yury/projects/todo-yii/yiiroot/framework/web/CController.php(265): TasksController->runActionWithFilters()
+#4 /home/yury/projects/todo-yii/yiiroot/framework/web/CWebApplication.php(282): TasksController->run()
+#5 /home/yury/projects/todo-yii/yiiroot/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#6 /home/yury/projects/todo-yii/yiiroot/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#7 /home/yury/projects/todo-yii/public_html/index.php(13): CWebApplication->run()
+REQUEST_URI=/public_html/api/tasks/8
+in /home/yury/projects/todo-yii/public_html/protected/controllers/TasksController.php (19)
+in /home/yury/projects/todo-yii/public_html/index.php (13)
+2014/06/15 00:18:37 [error] [php] Indirect modification of overloaded property Task::$attributes has no effect (/home/yury/projects/todo-yii/public_html/protected/controllers/TasksController.php:19)
+Stack trace:
+#0 /home/yury/projects/todo-yii/yiiroot/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 /home/yury/projects/todo-yii/yiiroot/framework/web/CController.php(308): CInlineAction->runWithParams()
+#2 /home/yury/projects/todo-yii/yiiroot/framework/web/CController.php(286): TasksController->runAction()
+#3 /home/yury/projects/todo-yii/yiiroot/framework/web/CController.php(265): TasksController->runActionWithFilters()
+#4 /home/yury/projects/todo-yii/yiiroot/framework/web/CWebApplication.php(282): TasksController->run()
+#5 /home/yury/projects/todo-yii/yiiroot/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#6 /home/yury/projects/todo-yii/yiiroot/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#7 /home/yury/projects/todo-yii/public_html/index.php(13): CWebApplication->run()
+REQUEST_URI=/public_html/api/tasks/8
+in /home/yury/projects/todo-yii/public_html/protected/controllers/TasksController.php (19)
+in /home/yury/projects/todo-yii/public_html/index.php (13)
+2014/06/15 00:18:49 [error] [php] Indirect modification of overloaded property Task::$attributes has no effect (/home/yury/projects/todo-yii/public_html/protected/controllers/TasksController.php:19)
+Stack trace:
+#0 /home/yury/projects/todo-yii/yiiroot/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 /home/yury/projects/todo-yii/yiiroot/framework/web/CController.php(308): CInlineAction->runWithParams()
+#2 /home/yury/projects/todo-yii/yiiroot/framework/web/CController.php(286): TasksController->runAction()
+#3 /home/yury/projects/todo-yii/yiiroot/framework/web/CController.php(265): TasksController->runActionWithFilters()
+#4 /home/yury/projects/todo-yii/yiiroot/framework/web/CWebApplication.php(282): TasksController->run()
+#5 /home/yury/projects/todo-yii/yiiroot/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#6 /home/yury/projects/todo-yii/yiiroot/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#7 /home/yury/projects/todo-yii/public_html/index.php(13): CWebApplication->run()
+REQUEST_URI=/public_html/api/tasks/8
+in /home/yury/projects/todo-yii/public_html/protected/controllers/TasksController.php (19)
+in /home/yury/projects/todo-yii/public_html/index.php (13)
+2014/06/15 00:20:34 [warning] [application] Failed to set unsafe attribute "comments_count" of "Task".
+in /home/yury/projects/todo-yii/public_html/protected/controllers/TasksController.php (19)
+in /home/yury/projects/todo-yii/public_html/index.php (13)
+2014/06/15 00:21:03 [warning] [application] Failed to set unsafe attribute "comments_count" of "Task".
+in /home/yury/projects/todo-yii/public_html/protected/controllers/TasksController.php (19)
+in /home/yury/projects/todo-yii/public_html/index.php (13)
+2014/06/15 00:21:06 [warning] [application] Failed to set unsafe attribute "comments_count" of "Task".
+in /home/yury/projects/todo-yii/public_html/protected/controllers/TasksController.php (19)
+in /home/yury/projects/todo-yii/public_html/index.php (13)
+2014/06/15 00:21:56 [warning] [application] Failed to set unsafe attribute "comments_count" of "Task".
+in /home/yury/projects/todo-yii/public_html/protected/controllers/TasksController.php (19)
+in /home/yury/projects/todo-yii/public_html/index.php (13)
+2014/06/15 00:33:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/controllers/tasks_view.js".' in /home/yury/projects/todo-yii/yiiroot/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/yury/projects/todo-yii/yiiroot/framework/web/CWebApplication.php(141): CWebApplication->runController('js/controllers/...')
+#1 /home/yury/projects/todo-yii/yiiroot/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/yury/projects/todo-yii/public_html/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/public_html/js/controllers/tasks_view.js
+HTTP_REFERER=http://todo-yii/public_html/
+---
+2014/06/15 11:17:48 [warning] [application] Failed to set unsafe attribute "id" of "Task".
+in /home/yury/projects/todo-yii/public_html/protected/controllers/TasksController.php (51)
+in /home/yury/projects/todo-yii/public_html/index.php (13)
+2014/06/15 11:17:48 [warning] [application] Failed to set unsafe attribute "created_at" of "Task".
+in /home/yury/projects/todo-yii/public_html/protected/controllers/TasksController.php (51)
+in /home/yury/projects/todo-yii/public_html/index.php (13)
+2014/06/15 15:15:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/comments".' in /home/yury/projects/todo-yii/yiiroot/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/yury/projects/todo-yii/yiiroot/framework/web/CWebApplication.php(141): CWebApplication->runController('api/comments')
+#1 /home/yury/projects/todo-yii/yiiroot/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/yury/projects/todo-yii/public_html/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/public_html/api/comments
+HTTP_REFERER=http://todo-yii/public_html/
+---
+2014/06/15 15:16:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/comments".' in /home/yury/projects/todo-yii/yiiroot/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/yury/projects/todo-yii/yiiroot/framework/web/CWebApplication.php(141): CWebApplication->runController('api/comments')
+#1 /home/yury/projects/todo-yii/yiiroot/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/yury/projects/todo-yii/public_html/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/public_html/api/comments
+HTTP_REFERER=http://todo-yii/public_html/
+---
+2014/06/15 15:19:33 [error] [php] json_decode() expects parameter 1 to be string, array given (/home/yury/projects/todo-yii/yiiroot/framework/web/helpers/CJSON.php:327)
+Stack trace:
+#0 /home/yury/projects/todo-yii/yiiroot/framework/web/actions/CInlineAction.php(49): CommentsController->actionList()
+#1 /home/yury/projects/todo-yii/yiiroot/framework/web/CController.php(308): CInlineAction->runWithParams()
+#2 /home/yury/projects/todo-yii/yiiroot/framework/web/CController.php(286): CommentsController->runAction()
+#3 /home/yury/projects/todo-yii/yiiroot/framework/web/CController.php(265): CommentsController->runActionWithFilters()
+#4 /home/yury/projects/todo-yii/yiiroot/framework/web/CWebApplication.php(282): CommentsController->run()
+#5 /home/yury/projects/todo-yii/yiiroot/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#6 /home/yury/projects/todo-yii/yiiroot/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#7 /home/yury/projects/todo-yii/public_html/index.php(13): CWebApplication->run()
+REQUEST_URI=/public_html/api/tasks/10/comments
+in /home/yury/projects/todo-yii/public_html/protected/controllers/CommentsController.php (7)
+in /home/yury/projects/todo-yii/public_html/index.php (13)
+2014/06/15 15:23:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/comments".' in /home/yury/projects/todo-yii/yiiroot/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/yury/projects/todo-yii/yiiroot/framework/web/CWebApplication.php(141): CWebApplication->runController('api/comments')
+#1 /home/yury/projects/todo-yii/yiiroot/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/yury/projects/todo-yii/public_html/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/public_html/api/comments
+HTTP_REFERER=http://todo-yii/public_html/
+---
+2014/06/15 15:23:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/comments".' in /home/yury/projects/todo-yii/yiiroot/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/yury/projects/todo-yii/yiiroot/framework/web/CWebApplication.php(141): CWebApplication->runController('api/comments')
+#1 /home/yury/projects/todo-yii/yiiroot/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/yury/projects/todo-yii/public_html/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/public_html/api/comments
+HTTP_REFERER=http://todo-yii/public_html/
+---
+2014/06/15 16:10:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/tasks/[object Object]/comments".' in /home/yury/projects/todo-yii/yiiroot/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/yury/projects/todo-yii/yiiroot/framework/web/CWebApplication.php(141): CWebApplication->runController('api/tasks/[obje...')
+#1 /home/yury/projects/todo-yii/yiiroot/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/yury/projects/todo-yii/public_html/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/public_html/api/tasks/[object%20Object]/comments
+HTTP_REFERER=http://todo-yii/public_html/
+---
+2014/06/15 16:12:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/tasks/[object Object]/comments".' in /home/yury/projects/todo-yii/yiiroot/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/yury/projects/todo-yii/yiiroot/framework/web/CWebApplication.php(141): CWebApplication->runController('api/tasks/[obje...')
+#1 /home/yury/projects/todo-yii/yiiroot/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /home/yury/projects/todo-yii/public_html/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/public_html/api/tasks/[object%20Object]/comments
+HTTP_REFERER=http://todo-yii/public_html/
+---

@@ -1,0 +1,51 @@
+<form name="taskForm" novalidate>
+  <h4 ng-show="isNew">{{ 'Create task' }}</h4>
+  <h4 ng-hide="isNew">{{ 'Update task' }}</h4>
+
+  <label>
+    {{ 'Title' }} *: <br>
+    <input type="text" ng-model="task.title" name="title" required class="span12">
+    <span class="text-error" ng-show="taskForm.$dirty && taskForm.title.$error.required">
+      {{'Can\'t be blank' }}.  
+    </span>
+  </label>
+
+  <label>
+    {{ 'Text' }} *: <br>
+    <textarea ng-model="task.text" name="text" required class="span12"></textarea>
+    <span class="text-error" ng-show="taskForm.$dirty && taskForm.text.$error.required">
+      {{'Can\'t be blank' }}.  
+    </span>
+  </label>
+
+  <label>
+    {{ 'Status' }} *: <br>
+    <select name="status_id" class="span12" required
+      ng-model="task.status_id"
+      ng-options="status.id as status.title for status in statuses"
+    >
+      <!-- <option ng-repeat="status in statuses" value='{{ status.id }}'>{{ status.title }}</option> -->
+    </select>
+    <span class="text-error" ng-show="taskForm.$dirty && taskForm.status_id.$error.required">
+      {{'Can\'t be blank' }}.  
+    </span>
+  </label>
+
+  <div class="alert alert-error" ng-show="showErrors">
+    <button type="button" class="close" data-dismiss="alert">&times;</button>
+    <h4>{{ 'Errors' }}:</h4>
+    <ul>
+      <li ng-repeat="error in errors">{{ error }}</li>
+    </ul>
+  </div>
+
+  <p>Форма не валидна: {{ taskForm.$invalid }}</p>
+  <button type="submit" ng-disabled="taskForm.$invalid || saving" ng-click="save()" class="btn btn-primary">
+    <span ng-show="isNew">{{ 'Create' }}</span>
+    <span ng-hide="isNew">{{ 'Update' }}</span>
+    <span ng-show="saving"><img ng-src="images/ajax-loader.gif" alt="loader"></span>
+  </button>
+
+  <a href="#/list" class="btn">{{ 'Cancel' }}</a>
+   
+</form>

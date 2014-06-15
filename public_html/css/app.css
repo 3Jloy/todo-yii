@@ -1,0 +1,25 @@
+body {
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+.map img {
+  max-width: none;
+}
+#placesList ul {
+  list-style: none;
+  margin: 0 0 20px 0;
+}
+#placesList ul li {
+  padding: 0 0 10px 0;
+}
+#contact-form .text-error,
+#login-form .text-error {
+  display: inline;
+}
+footer {
+  background-color: #e5e5e5;
+  border-top: solid 1px #cccccc;
+}
+footer p {
+  margin: 5px;
+}
