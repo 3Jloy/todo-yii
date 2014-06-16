@@ -5,7 +5,7 @@ class m140612_114514_add_data_to_statuses_table extends CDbMigration
   
   public function safeUp()
   {
-    $statuses = ['New', 'Complete', 'Not possible to perform'];
+    $statuses = array('New', 'Complete', 'Not possible to perform');
 
     foreach ($statuses as $status) {
       # code...

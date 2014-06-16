@@ -726,3 +726,4 @@ Stack trace:
 REQUEST_URI=/public_html/api/tasks/[object%20Object]/comments
 HTTP_REFERER=http://todo-yii/public_html/
 ---
+2014/06/16 09:34:09 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'yii_todo.tbl_migration' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `tbl_migration`.
